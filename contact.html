@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>מיינדוייז- צור קשר</title>
+    <meta name="description" content="צור קשר" />
+    <meta name="keywords" content="צור קשר, שם מלא, תאריך, תעודת זהות,מייל, מספר פלאפון" />
+    <meta name="author" content="עדן רוצקי, אלמוג קונטנט, שיר שמואלי, נופר גנון" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="images/logo.png" />
+
+</head>
+<body>
+    <div id="containerContactPage">
+        <nav id="navHeader">
+            <ul>
+                <li><a href="index.html"> <img class="logo" src="images/logo.png" alt="logo" /></a></li>
+                <li>
+                    מצב רוח
+                    <ul>
+                        <li><a href="shortOnTime.html">קצר בזמן</a></li>
+                        <li class="notactive"><a href="#">אקטיבי</a></li>
+                        <li><a href="stressAndAnxietyRegulation.html">ויסות מתח וחרדה</a></li>
+                    </ul>
+                </li>
+                <li>
+                    אודות
+                    <ul>
+                        <li><a href="aboutUs.html">קצת עלינו</a></li>
+                        <li><a href="map.html">מפת האתר</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+        </nav>
+
+        <nav id="navCrums">
+            <ol>
+                <li><a id="homePage" href="index.html">דף הבית</a></li>
+                <li><a>צור קשר</a></li>
+            </ol>
+        </nav>
+        <section>
+            <h2 class="pageTitle">יצירת קשר</h2>
+        </section>
+        <section class="help">
+            <p class="invitatioToContact1">
+                ״לא נוכל לפתור בעיות באמצעות אותה צורת חשיבה שהשתמשנו בה כאשר יצרנו אותן״ <b>(אלברט איינשטיין)</b>
+            </p>
+            <p class="invitatioToContact2">
+                יש לכם בעיה שתרצו לפתור?
+                נשמח שתשתפו אותנו!
+            </p>
+            <p class="invitatioToContact2">
+                אנחנו תמיד כאן בשבילכם. מוזמנים להיות בקשר.
+            </p>
+        </section>
+        <img id="fillOutPana" src="images/fill-out-pana.png" />
+        <form>
+            <main>
+                <section>
+                    <label for="date">
+                        תאריך הפנייה*
+                        <br />
+                        <input type="date" required />
+                    </label>
+                    <br /><br />
+                    <label for="fullName">
+                        שם מלא*
+                        <br />
+                        <input type="text" id="fullName" placeholder="הזן שם פרטי ושם ומשפחה" required/>
+                    </label>
+                    <br /><br />
+                    <label for="userId">
+                        תעודת זהות*
+                        <br />
+                        <input type="text" id="userId" placeholder="כולל סיפרת ביקורת" required />
+                    </label>
+                    <br /><br />
+                    <label for="email">
+                        מייל*
+                        <br />
+                        <input type="email" id="email" required />
+                    </label>
+                    <br /><br />
+                    <label for="phoneNumber">
+                        טלפון ליצירת קשר*
+                        <br />
+                        <input type="text" id="phoneNumber" required/>
+                    </label>
+                </section>
+                <br /><br />
+                <section>
+                    <label for="subject">
+                        נושא הפנייה*
+                        <br />
+                        <input type="text" class="subject" required />
+                        <br /><br />
+                        תיאור הפניה
+                        <br />
+                        <textarea placeholder="סיבת הפנייה" class="subject" row="30"> </textarea>
+                    </label>
+                </section>
+                <br />
+                <section id="sumbit">
+                    <label for="submit">
+                        <input type="submit" id="submit" value="שלח" onclick="requiredField()" />
+                    </label>
+                </section>
+            </main>
+        </form>
+    </div>
+    <div>
+        <footer>
+            <nav aria-label="footerNav" class="navFooter">
+                <ul>
+                    <li>
+                        <a href="map.html">מפת האתר</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">קצת עלינו</a>
+                    </li>
+                    <li><a href="contact.html">צור קשר</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
